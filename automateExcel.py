@@ -9,10 +9,6 @@ wbObj2 = openpyxl.load_workbook(secondFile)
 wbk1 = wbObj1.worksheets[0]
 wbk2 = wbObj2.worksheets[0]
 
-# from the active attribute
-sheetObj1 = wbObj1.active
-sheetObj2 = wbObj2.active
-
 names = []
 for myRow in range(2, wbk2.max_row + 1):
     names.append(wbk2.cell(row=myRow, column=1).value.lower())
