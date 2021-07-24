@@ -1,7 +1,7 @@
 import openpyxl
 
-firstFile = r"./documents/company-in-nigeria.xlsx"
-secondFile = r"./documents/company-in-rwanda.xlsx"
+firstFile = r"company-in-nigeria.xlsx"
+secondFile = r"company-in-rwanda.xlsx"
 
 wbObj1 = openpyxl.load_workbook(firstFile)    
 wbObj2 = openpyxl.load_workbook(secondFile)
